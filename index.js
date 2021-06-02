@@ -1,26 +1,23 @@
 // /**
-//  * Example 1 - Variable declaration
+//  * CHALLENGE 1
+//  * 
+//  * Declare variable "myObject" and assign value {}.
+//  * Print this variable to the console.
+//  * NOTE: variable "myObject" will NOT be reassigned in the future
 //  */
-// var a;
 
-// console.log(a);
+// const myObject = {};
 
-// // console.log(b); //Uncaught ReferenceError: b is not defined
+// console.log(myObject);
 
-// let c;
+// // myObject = {}; // Uncaught TypeError: Assignment to constant variable.
 
-// console.log(c);
+/**
+ * CHALLENGE 2
+ * 
+ * Declare "x" and assign value 10 to it.
+ * Declare "y" and assign value true to it.
+ * Declare "myObject" and assign object with two name-value pairs.
+ * 
+ */
 
-// //const d; //Uncaught SyntaxError: Missing initializer in const declaration
-
-
-// /**
-//  * Example 4 -"const"
-//  */
-// const myBoolean = true;
-
-// console.log(myBoolean);
-
-// // myBoolean = false; // Uncaught TypeError: Assignment to constant variable.
-
-// // const myBoolean = false; //Uncaught SyntaxError: Identifier 'myBoolean' has already been declared
