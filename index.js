@@ -32,7 +32,7 @@ console.log(myObject);
  * {a: 10, b: true, __proto__: Object}
  */
 x = 20;
-let anotherObject = {};
+let anotherObject;
 anotherObject = {
     newA: x, 
     b: true, 
