@@ -123,3 +123,44 @@
 
 // console.log(myObject);
 
+// /**
+//  * EXAMPLE 4
+//  * 
+//  * Missing properties
+//  */
+// const myObject = {
+//     a: 3,
+//     b: 2
+// };
+
+// // Code execution is not stoped
+// console.log(myObject.c); //undefined
+
+// console.log(myObject.absentProperty); //undefined
+
+// // Code execution is stopped
+// //console.log(nonDeclaredVariable); // Uncaught ReferenceError: nonDeclaredVariable is not defined
+
+// // Never asign undifined to any propertie or value
+// // Use null insted
+// myObject.newPropertyWithUndefinedValue = undefined;
+
+// console.log(myObject);
+// console.log(myObject.newPropertyWithUndefinedValue);
+
+// /**
+//  * CHALLENGE 3
+//  * 
+//  * Create object "objectWithNestedObject" with initial value {}.
+//  * Add property "nestedObject" with initial value {}.
+//  * Add property "a" with value "null" to "nestedObject". Use dot notation
+//  * Add property "b" with value "true" to "nestedObject". Use bracket notation. Create new variable with property name
+//  */
+
+// let objectWithNestedObject = {};
+// objectWithNestedObject.nestedObject = {};
+// objectWithNestedObject.nestedObject.a = null;
+// const propertyName = "b";
+// objectWithNestedObject.nestedObject[propertyName] = true;
+
+// console.log(objectWithNestedObject);
