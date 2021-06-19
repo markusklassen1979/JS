@@ -164,3 +164,42 @@
 
 // outerFunction(3,7); // 100
 
+/**
+ * EXAMPLE 1
+ * 
+ * Try to "declare" function expression
+ */
+// It is not possible to use funciton expression standalone
+//function() {} // Uncaught syntaxErro
+
+
+// /**
+//  * EXAMPLE 2
+//  * 
+//  * Assign function expresion to a variable
+//  */
+// const myFunction = function() {};
+
+// console.log(myFunction()); // undefined
+
+// console.log(myFunction); // ƒ () {}
+
+// /**
+//  * EXAMPLE 3
+//  * 
+//  * Callback function
+//  */
+// setTimeout(function(){
+//     console.log("Delayed message");
+// },3000);
+
+/**
+ * EXAMPLE 4
+ * 
+ * Callback function (example 2)
+ */
+let i = 1;
+setInterval(function(){
+    console.log("Message logged each 1 second " + i);
+    i += 1;
+},1000);
