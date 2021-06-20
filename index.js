@@ -26,3 +26,34 @@ a = "Hello";
 b = "World";
 // Strings concatenation
 console.log(a + " " + b);
+
+let c = "1";
+
+// Unary plus
+console.log(+c); // 1
+console.log(Number(c)); // 1
+c = undefined
+console.log(+c); // NaN
+
+// Unary minus
+c = "5";
+console.log(-c); // -5
+c = "abc"
+console.log(-c); // NaN
+
+// ++ 
+let d = 5;
+++d;
+console.log(d); // 6
+d++
+console.log(d); // 7
+
+console.log(++d); //8
+console.log(d++); //8
+console.log(d); // 9
+
+// --
+console.log(d--); // 9
+console.log(d); // 8
+console.log(--d); // 7
+console.log(d); // 7
