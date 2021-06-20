@@ -193,13 +193,39 @@
 //     console.log("Delayed message");
 // },3000);
 
+// /**
+//  * EXAMPLE 4
+//  * 
+//  * Callback function (example 2)
+//  */
+// let i = 1;
+// setInterval(function(){
+//     console.log("Message logged each 1 second " + i);
+//     i += 1;
+// },1000);
+
 /**
- * EXAMPLE 4
+ * CHALLENGE 1
  * 
- * Callback function (example 2)
+ * Use the following built-in functions:
+ * setTimeout
+ * setInterval
+ * clearInterval
+ * 
+ * You should print to the console only 5 messages with an interval of 2 seconds:
+ * "Here is message number 1"
+ * "Here is message number 2"
+ * "Here is message number 3"
+ * "Here is message number 4"
+ * "Here is message number 5"
  */
+
 let i = 1;
-setInterval(function(){
-    console.log("Message logged each 1 second " + i);
+const myFunction = function(){
+    console.log("Here is message number " + i);
     i += 1;
-},1000);
+}
+const interHandle = setInterval(myFunction,2000);
+setTimeout(function(){
+    clearInterval(interHandle);
+},10000)
