@@ -58,68 +58,100 @@
 // console.log(--d); // 7
 // console.log(d); // 7
 
+// /**
+//  * SECTION 2
+//  * 
+//  * Comparisson operators
+//  */
+// // Number comparisson
+// let a, b;
+
+// a = 5;
+// b = 7;
+// c = 5;
+
+// console.log(a < b);
+// console.log(a > b);
+
+// console.log(a <= c);
+// console.log(a >= c);
+
+// console.log("_______")
+
+
+// // String comparisson
+// let myStr1, myStr2, myStr3;
+
+// myStr1 = "abc";
+// myStr2 = "bcd";
+// myStr3 = "Bcd";
+// // Sorted strings "Bcd", "abc", "bcd"
+
+// console.log(myStr1 > myStr2); // false
+
+// console.log(myStr1 < myStr2); // true
+
+// console.log(myStr1 > myStr3); // true
+
+// console.log("_______")
+
+// // Equality operators
+// // NEVER USE "==" AND "!="
+// let myString = "0";
+// let myNumber = 0;
+// let myBoolean = false;
+
+// // Types of the values may be different
+// console.log(myString == myNumber); // true
+// console.log(myNumber == myBoolean); //true
+// console.log(myString == myBoolean); //true
+
+// // TYEP and VALUE are compared
+// console.log(myString === myNumber); // false
+// console.log(myNumber === myBoolean); //false
+// console.log(myString === myBoolean); //false
+
+// // How you should compare variables of different types
+// console.log(Number(myString) === myNumber); // true
+// console.log(+myString === myNumber); // true
+
+// console.log(myString != myNumber); // false
+// console.log(myString !== myNumber); // true
+
+// console.log(null === undefined); // false
+
+// console.log(null == undefined); // true
+
+// console.log(0 === "" === null === undefined === false); // true
+
 /**
- * SECTION 2
+ * SECTION 3
  * 
- * Comparisson operators
+ * Logical operators
  */
-// Number comparisson
-let a, b;
+console.log(true || false); // true
+console.log(false || true); // true
+console.log("abc" || ""); // abc
+console.log("" || "abc"); // abc
+console.log("" || ""); // ""
+// Falsy values
+console.log("" || 0 || null || undefined || NaN || false); // false
 
-a = 5;
-b = 7;
-c = 5;
+console.log("______");
 
-console.log(a < b);
-console.log(a > b);
+let city;
+const defaultCity = "New York";
 
-console.log(a <= c);
-console.log(a >= c);
+let myCity = city || defaultCity;
+console.log(myCity);
 
-console.log("_______")
+console.log("______");
 
+let myOtherCity = city || console.log("Fill in city please") || defaultCity;
+console.log(myOtherCity);
 
-// String comparisson
-let myStr1, myStr2, myStr3;
+console.log("______");
 
-myStr1 = "abc";
-myStr2 = "bcd";
-myStr3 = "Bcd";
-// Sorted strings "Bcd", "abc", "bcd"
-
-console.log(myStr1 > myStr2); // false
-
-console.log(myStr1 < myStr2); // true
-
-console.log(myStr1 > myStr3); // true
-
-console.log("_______")
-
-// Equality operators
-// NEVER USE "==" AND "!="
-let myString = "0";
-let myNumber = 0;
-let myBoolean = false;
-
-// Types of the values may be different
-console.log(myString == myNumber); // true
-console.log(myNumber == myBoolean); //true
-console.log(myString == myBoolean); //true
-
-// TYEP and VALUE are compared
-console.log(myString === myNumber); // false
-console.log(myNumber === myBoolean); //false
-console.log(myString === myBoolean); //false
-
-// How you should compare variables of different types
-console.log(Number(myString) === myNumber); // true
-console.log(+myString === myNumber); // true
-
-console.log(myString != myNumber); // false
-console.log(myString !== myNumber); // true
-
-console.log(null === undefined); // false
-
-console.log(null == undefined); // true
-
-console.log(0 === "" === null === undefined === false); // true
+city = "Los Angeles";
+myCity = city || defaultCity;
+console.log(myCity);
