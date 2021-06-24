@@ -124,69 +124,100 @@
 
 // console.log(0 === "" === null === undefined === false); // true
 
-/**
- * SECTION 3
- * 
- * Logical operators
- */
-// OR Operator
-console.log(true || false); // true
-console.log(false || true); // true
-console.log("abc" || ""); // abc
-console.log("" || "abc"); // abc
-console.log("" || ""); // ""
-// Falsy values
-console.log("" || 0 || null || undefined || NaN || false); // false
+// /**
+//  * SECTION 3
+//  * 
+//  * Logical operators
+//  */
+// // OR Operator
+// console.log(true || false); // true
+// console.log(false || true); // true
+// console.log("abc" || ""); // abc
+// console.log("" || "abc"); // abc
+// console.log("" || ""); // ""
+// // Falsy values
+// console.log("" || 0 || null || undefined || NaN || false); // false
 
-console.log("______");
+// console.log("______");
 
-let city;
-const defaultCity = "New York";
+// let city;
+// const defaultCity = "New York";
 
-let myCity = city || defaultCity;
-console.log(myCity);
+// let myCity = city || defaultCity;
+// console.log(myCity);
 
-console.log("______");
+// console.log("______");
 
-let myOtherCity = city || console.log("Fill in city please") || defaultCity;
-console.log(myOtherCity);
+// let myOtherCity = city || console.log("Fill in city please") || defaultCity;
+// console.log(myOtherCity);
 
-console.log("______");
+// console.log("______");
 
-city = "Los Angeles";
-myCity = city || defaultCity;
-console.log(myCity);
+// city = "Los Angeles";
+// myCity = city || defaultCity;
+// console.log(myCity);
 
-console.log("______");
+// console.log("______");
 
-// AND operator
-console.log(true && false); // false
-console.log(false && true); // false
+// // AND operator
+// console.log(true && false); // false
+// console.log(false && true); // false
 
-// AND returns value of the first falsy operand
-console.log("abc" && 10 && false && "" && "abcd"); // false
-console.log("abc" && 10 && NaN && "" && "abcd"); // Nan
-console.log("abc" && 10 && "" && "abcd"); // ""
+// // AND returns value of the first falsy operand
+// console.log("abc" && 10 && false && "" && "abcd"); // false
+// console.log("abc" && 10 && NaN && "" && "abcd"); // Nan
+// console.log("abc" && 10 && "" && "abcd"); // ""
 
-// All operands are truthy
-console.log("abc" && 10 && true && 123 && "Hello World"); // Hello World
+// // All operands are truthy
+// console.log("abc" && 10 && true && 123 && "Hello World"); // Hello World
 
-// NOT operator !
-console.log("______");
+// // NOT operator !
+// console.log("______");
 
-console.log(!"abc"); //false
-console.log(!""); // true
-console.log(!0); // true
+// console.log(!"abc"); //false
+// console.log(!""); // true
+// console.log(!0); // true
 
-let myVariable;
-myVariable = undefined;
-console.log(!myVariable); // true
+// let myVariable;
+// myVariable = undefined;
+// console.log(!myVariable); // true
 
-myVariable = "Markus";
-console.log(!myVariable); // false
+// myVariable = "Markus";
+// console.log(!myVariable); // false
 
-// Quick trytht/falsy check
-myVariable = null;
-console.log(!!myVariable); // false
-myVariable = 10;
-console.log(!!myVariable); // true
+// // Quick trytht/falsy check
+// myVariable = null;
+// console.log(!!myVariable); // false
+// myVariable = 10;
+// console.log(!!myVariable); // true
+
+// /**
+//  * SECTION 4
+//  * 
+//  * Operators precedence
+//  */
+// console.log(2 + 4 * 10); // 42
+// console.log((2 + 4) * 10); // 60
+
+// let a;
+// a = 1;
+// a = a + 5;  // First "+", second "="
+// console.log(a); // 6
+
+// /**
+//  * SECTION 5
+//  * 
+//  * Operators Associativity
+//  */
+// let a, b;
+// b = 3;
+
+// a = b = 5; // right to tleft
+// console.log(a, b); // a=5, b=5
+
+// console.log(4 + 5 + 6); // 15 - left to right
+// console.log(6 + 4 + 5); // 15 - left to right
+
+// console.log(5 * 10 / 2); // 25
+// console.log(5 * 10 / 2 / 5); // 5 left to right
+
