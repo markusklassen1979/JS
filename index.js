@@ -129,6 +129,7 @@
  * 
  * Logical operators
  */
+// OR Operator
 console.log(true || false); // true
 console.log(false || true); // true
 console.log("abc" || ""); // abc
@@ -155,3 +156,37 @@ console.log("______");
 city = "Los Angeles";
 myCity = city || defaultCity;
 console.log(myCity);
+
+console.log("______");
+
+// AND operator
+console.log(true && false); // false
+console.log(false && true); // false
+
+// AND returns value of the first falsy operand
+console.log("abc" && 10 && false && "" && "abcd"); // false
+console.log("abc" && 10 && NaN && "" && "abcd"); // Nan
+console.log("abc" && 10 && "" && "abcd"); // ""
+
+// All operands are truthy
+console.log("abc" && 10 && true && 123 && "Hello World"); // Hello World
+
+// NOT operator !
+console.log("______");
+
+console.log(!"abc"); //false
+console.log(!""); // true
+console.log(!0); // true
+
+let myVariable;
+myVariable = undefined;
+console.log(!myVariable); // true
+
+myVariable = "Markus";
+console.log(!myVariable); // false
+
+// Quick trytht/falsy check
+myVariable = null;
+console.log(!!myVariable); // false
+myVariable = 10;
+console.log(!!myVariable); // true
