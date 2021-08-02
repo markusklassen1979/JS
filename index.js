@@ -253,3 +253,32 @@
 // console.log(14 % 8); // 6
 // console.log(100 % 30 % 3); // 1
 
+// /**
+//  * TASK 3
+//  * 
+//  * What will be logged to the console?
+//  */
+// console.log(3 || true && null || false); 
+// // STEP 1: true && null -> null
+// // STEP 2: 3 || null -> 3
+// // Result: 3
+
+// /**
+//  * TASK 4
+//  * 
+//  * Find alternatives
+//  */
+// let a = 10;
+
+// //a = a + 1;
+// //a += 1;
+
+// //a = a * 2;
+// //a *= 2;
+
+// //a = a - 5;
+// //a -= 5
+
+// //a = a / 2;
+// //a /= 2;
+
